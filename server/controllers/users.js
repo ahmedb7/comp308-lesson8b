@@ -25,7 +25,7 @@ module.exports.DisplayLogin = (req, res) => {
 module.exports.ProcessLogin = () => {
   return passport.authenticate('local', {
   successRedirect: '/games',
-  failureRedirect: 'users/login',
+  failureRedirect: '/users/login',
   failureFlash: true
 })
 }
